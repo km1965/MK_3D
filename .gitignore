@@ -1,0 +1,20 @@
+# Environnement virtuel Python
+.venv/
+venv/
+
+# Dossiers de sortie / compilés
+build/
+dist/
+output/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Fichiers temporaires / éditeurs
+*.tmp
+*.bak
+~$*
+.DS_Store
+Thumbs.db
