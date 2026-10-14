@@ -1,9 +1,40 @@
 # MK_3D
 
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Plateforme](https://img.shields.io/badge/Plateforme-Windows-0078D6?logo=windows&logoColor=white)](#)
+[![CustomTkinter](https://img.shields.io/badge/UI-CustomTkinter-1f6fb2)](https://github.com/TomSchimansky/CustomTkinter)
+[![Licence](https://img.shields.io/badge/Licence-MIT-green.svg)](LICENSE)
+[![Release](https://img.shields.io/badge/Release-v1.0.0-orange.svg)](https://github.com/km1965/MK_3D/releases/latest)
+
 Application **Windows** (Python + CustomTkinter) pour créer des **figures 3D / 2D**
 à partir d'un fichier de points **XYZ** (Excel ou CSV), relier les points par
 **libellé**, **matérialiser les talus** (polygones fermés) et générer un
 **rapport Word (.docx)** contenant les images produites.
+
+---
+
+## Téléchargement
+
+L'exécutable autonome **`Mk_MNT_3D.exe`** (aucune installation de Python requise)
+est disponible dans les versions :
+
+**[Télécharger la dernière version](https://github.com/km1965/MK_3D/releases/latest)**
+
+---
+
+## Aperçu
+
+**Talus RD / RG et chaaba** — faces fermées (profils bas ↔ haut) et fermeture de la base :
+
+![Talus 3D](docs/apercu_talus_3d.png)
+
+**Polylignes par libellé** — chaque libellé relie ses points :
+
+![Polylignes 3D](docs/apercu_liens_3d.png)
+
+**Projections orthogonales 2D** (X-Y, X-Z, Y-Z) :
+
+![Projections 2D](docs/apercu_projections.png)
 
 ---
 
@@ -227,12 +258,14 @@ MK_3D/
 ├─ assets/
 │  ├─ mk_mnt_3d.ico         # icône de l'application
 │  └─ mk_mnt_3d.png
+├─ docs/                     # images d'aperçu (README)
 ├─ sample_data/             # jeux de données d'exemple
-├─ tools/                   # données d'exemple, icône et tests
+├─ tools/                   # génération de données, icône et tests
 ├─ requirements.txt
 ├─ Mk_MNT_3D.spec           # recette PyInstaller
 ├─ build_exe.ps1 / .bat     # compilation de l'exécutable
-├─ run.bat
+├─ run.bat                  # lancement rapide
+├─ LICENSE                  # licence MIT
 └─ dist/Mk_MNT_3D.exe       # exécutable généré
 ```
 
